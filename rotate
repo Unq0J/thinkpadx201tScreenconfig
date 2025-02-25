@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#takes arguments ex: 
+#  ./rotate normal // inverted
+# this inverts the screen as well as the input
+
 echo $1
 
 if [[ $1 == "normal" ]]
