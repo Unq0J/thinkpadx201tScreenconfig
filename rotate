@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo $1
+
+if [[ $1 == "normal" ]]
+then
+  echo "Screen is rotating to normal"
+  xinput -set-prop 13 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+  xrandr -o normal
+
+elif [[ $1 ==  "inverted" ]]
+then
+  echo "inverting screen"
+  xinput -set-prop 13 "Coordinate Transformation Matrix" -1 0 1 0 -1 1 0 0 1
+  xrandr -o inverted
+fi
