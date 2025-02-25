@@ -2,7 +2,7 @@
 
 #takes arguments ex: 
 #  ./rotate normal // inverted
-# this inverts the screen as well as the input
+# this inverts the screen as well as the input of the mouse
 
 echo $1
 
